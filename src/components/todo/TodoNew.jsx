@@ -1,6 +1,10 @@
+/* eslint-disable react/prop-types */
 
+const TodoNew = (props) => {
+    console.log(">>>> check props", props)
+    const { addNewTodo } = props;
 
-const TodoNew = () => {
+    addNewTodo('William');
     return (
         <div className='todo-new'>
         <input type="text" placeholder='Enter your task'/>
