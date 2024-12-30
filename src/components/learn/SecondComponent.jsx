@@ -8,4 +8,4 @@ const SecondComponent = () => {
   );
 }
 
-export { SecondComponent };
+export default SecondComponent;
