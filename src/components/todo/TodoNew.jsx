@@ -5,10 +5,24 @@ const TodoNew = (props) => {
     const { addNewTodo } = props;
 
     addNewTodo('William');
+
+    const handleClick = () => {
+        alert('Clickme');
+    }
+
+    const handleOnChange = (name) => {
+        console.log('>>>>>>>handleOnChange', name);
+    }
+   
     return (
         <div className='todo-new'>
-        <input type="text" placeholder='Enter your task'/>
-        <button>Add</button>
+        <input type="text" placeholder='Enter your task'
+        onChange={() => {handleOnChange(event.target.value)}}
+        />
+        <button 
+        style= {{cursor: "pointer"}}
+        onClick={handleClick}
+        >Add</button>
       </div>
     )
 }
