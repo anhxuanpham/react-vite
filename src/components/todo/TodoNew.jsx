@@ -1,17 +1,24 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 
 const TodoNew = (props) => {
-    console.log(">>>> check props", props)
+    // console.log(">>>> check props", props)
+
+    // const valueInput = 'William';
+    const [valueInput, setValueInput] = useState('William');
+
+
     const { addNewTodo } = props;
 
-    addNewTodo('William');
+    // addNewTodo('William');
 
     const handleClick = () => {
-        alert('Clickme');
+        console.log('>>>>Check valueInput: ', valueInput);
     }
 
     const handleOnChange = (name) => {
-        console.log('>>>>>>>handleOnChange', name);
+        // console.log('>>>>>>>handleOnChange', name);
+        setValueInput(name);
     }
    
     return (
@@ -23,6 +30,7 @@ const TodoNew = (props) => {
         style= {{cursor: "pointer"}}
         onClick={handleClick}
         >Add</button>
+        <div>My input is {valueInput} </div>
       </div>
     )
 }
