@@ -7,7 +7,7 @@ import { useState } from 'react'
 const App = () => {
 
   const [todoList, setTodoList] = useState([
-
+      
   ])
 
 
@@ -30,7 +30,6 @@ const App = () => {
       addNewTodo = {addNewTodo}
       />
       <TodoData
-          todoList = {todoList}
       />
       <div className='todo-image'>
         <img src={reactLogo} className='logo' alt='logo' />
