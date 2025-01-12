@@ -67,4 +67,9 @@ button:focus-visible {
   }
 }
 
-
+.todo-title {
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}

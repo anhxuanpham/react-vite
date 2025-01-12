@@ -45,7 +45,7 @@
   margin-right: 5px;
 }
 
-.todo-title {
+todo-title {
   font-size: 30px;
   color: red;
   text-align: center;

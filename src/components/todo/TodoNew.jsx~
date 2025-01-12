@@ -31,7 +31,7 @@ const TodoNew = (props) => {
         style= {{cursor: "pointer"}}
         onClick={handleClick}
         >Add</button>
-        <div className='todo-text'>My input is {valueInput} </div>
+        <div className='todo-input'>My input is {valueInput} </div>
       </div>
     )
 }

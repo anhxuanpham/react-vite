@@ -21,7 +21,12 @@ const App = () => {
   }
 
   const addNewTodo = (name) => {
-    alert(`New todo added: ${name}`)
+    const newTodo = {
+      id: todoList.length + 1,
+      name: name,
+      age: 25
+    }
+    setTodoList([...todoList, newTodo]);
   }
   
   return (
@@ -38,7 +43,7 @@ const App = () => {
         
       />
       <div className='todo-image'>
-        <img src={reactLogo} className='logo' />
+        <img src={reactLogo} className='logo' alt='logo' />
       </div>
     </div>
   )
