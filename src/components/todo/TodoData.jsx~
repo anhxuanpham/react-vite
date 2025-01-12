@@ -11,7 +11,7 @@ const TodoData = (props) => {
                 console.log(">>>> check item: ", item, index);
                 return (
                     // eslint-disable-next-line react/jsx-key
-                    <div className='todo-item'>
+                    <div>
                         <div>{item.name} </div>
                         <button>Remove</button>
                     </div>
