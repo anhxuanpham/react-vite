@@ -2,7 +2,10 @@
 
 const TodoData = (props) => {
     
-    const { todoList } = props;
+    const { todoList, removeTodo } = props;
+    const handleClick = (id) => {
+        removeTodo(id);
+    }
 
     console.log(">>>> check props: ", todoList)
     return (
@@ -13,7 +16,9 @@ const TodoData = (props) => {
                     // eslint-disable-next-line react/jsx-key
                     <div className={`todo-item`} key={item.id}>
                         <div>{item.name} </div>
-                        <button>Remove</button>
+                        <button
+                            onClick={() => handleClick(item.id)}
+                            style={{cursor: "pointer"}}>Remove</button>
                     </div>
                 )
             })}
