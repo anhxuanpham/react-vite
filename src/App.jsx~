@@ -3,6 +3,16 @@ import TodoData from './components/todo/TodoData'
 import TodoNew from './components/todo/TodoNew'
 import reactLogo from './assets/react.svg'
 import { useState } from 'react'
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter(
+    
+);
+
+
 
 const App = () => {
 
@@ -38,6 +48,7 @@ const App = () => {
         {todoList.length > 0 ?
       <TodoData
           todoList = {todoList}
+            removeTodo = {removeTodo}
       />
         :
         <div className='todo-image'>
